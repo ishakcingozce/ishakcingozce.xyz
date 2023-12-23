@@ -1,0 +1,204 @@
+html {
+    scroll-behavior: smooth;
+    color: white;
+    font-family: sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 80px;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-evenly;
+    width: 100px;
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav_links li {
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    transition: .6s;
+    border-radius: .6rem;
+}
+
+.nav_links a {
+    position: relative;
+}
+
+.nav_links a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: white;
+    top: 105%;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.nav_links a:hover:before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+main {
+    margin-top: 10%;
+    z-index: 99;
+}
+
+.top_text {
+    margin-left: 80px;
+}
+
+.top_text h3 {
+    font-size: 50px;
+    margin-bottom: 7px;
+}
+
+.top_text h3 b {
+    color: red;
+    position: relative;
+}
+
+.top_text h3 b::after {
+    content: '';
+    background: red;
+    mix-blend-mode: difference;
+    width: calc(100% + 20px);
+    height: 0;
+    position: absolute;
+    bottom: -4px;
+    left: -10px;
+    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.top_text h3 b:hover::after {
+    height: calc(100% + 8px);
+}
+
+.top_text_head {
+    display: flex;
+    align-items: center;
+}
+
+.top_text_head img {
+    height: 55px;
+    border-radius: 100px;
+    margin-left: 17px;
+    border: 3px solid white;
+}
+
+.socials {
+    margin: 20px 80px;
+}
+
+.socials a {
+    margin-right: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.socials a i {
+    transition: .4s;
+}
+
+#twitter-logo i:hover {
+    color: #1DA1F2;
+}
+
+#github-logo i:hover {
+    color: #2b3137;
+}
+
+#reddit-logo i:hover {
+    color: #FF4500;
+}
+
+#discord-logo i:hover {
+    color: #7289d9;
+}
+
+#hackthebox-logo svg {
+    margin-bottom: -5.9px;
+    fill: white;
+    transition: .4s;
+}
+
+#hackthebox-logo svg:hover {
+    fill: #9FEF00;
+}
+
+#tryhackme-logo svg {
+    margin-bottom: -5.9px;
+    fill: white;
+    transition: .4s;
+}
+
+#tryhackme-logo svg:hover {
+    fill: red;
+}
+
+#mail-logo i:hover {
+    color: yellow;
+}
+
+.eclipse1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 80%;
+}
+
+.eclipse2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 60%;
+}
+
+/* effect-shine */
+
+a.effect-shine:hover {
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
