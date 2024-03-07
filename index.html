@@ -1,1 +1,90 @@
-<h1>WE ARE ANONYMOUS</h1>
+<!doctype html>
+<html lang=en>
+
+<head>
+    <meta charset=UTF-8 />
+    <meta name=description content="Ishak Cingözce">
+    <meta name=author content="Ishak Cingözce">
+    <meta name=viewport content="width=device-width,initial-scale=1" />
+    <meta http-equiv=X-UA-Compatible content="ie=edge" />
+    <link rel=stylesheet href=https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css
+        integrity=sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO crossorigin=anonymous>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel=stylesheet>
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;700&display=swap" rel=stylesheet>
+    <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <script src=https://kit.fontawesome.com/3c09bcb51a.js></script>
+    <title>Çok Yakında</title>
+    <link href="styles/main.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.jpg"/>
+</head>
+
+<body>
+    <div class=container>
+        <div class=row>
+            <div class="left-wrap col-12 col-md-5">
+                <div class=left>
+                    <p><span class=days></span><span class=small> DAYS</span></p>
+                    <p><span class=hours></span><span class=small> HOUR</span></p>
+                    <p>&nbsp;&nbsp;<span class=minutes></span><span class=small> MINUTE</span></p>
+                    <p>&nbsp;&nbsp;<span class=seconds></span><span class=small> SECOND</span></p>
+                </div>
+            </div>
+            <div class="col-12 col-md-7 right">
+                <div class=mainInfo>
+                    <h1>Coming Soon...</h1>
+                    <p class=slogan>I'm currently updating my site a little bit.<br> It will be live again soon and we will be here with more content.<br> Wait patiently, because it's better on the way!</p>
+                </div>
+                <ul class=icon-list>
+                    <li class=icon><a class=twitter href=https://twitter.com/ishakcingozce></a></li>
+                    <li class=icon><a class=linkedin href=https://www.linkedin.com/in/ishakcingozce></a></li>
+                    <li class=icon><a class=instagram href=https://instagram.com/ishakcingozce></a></li>
+                    <li class=icon><a class=youtube href=https://youtube.com/@ishakcingozce></a></li>
+                    <li class=icon><a class=github href=https://github.com/ishakcingozce></a></li>
+                    <li class=icon><a class=medium href=https://medium.com/@ishakcingozce></a></li>
+
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts/bundle.js"></script>
+ 
+</body>
+
+<audio id="myAudio">
+
+    <source src="https://cdn.discordapp.com/attachments/1214966140426649650/1214968650046640139/music.mp3?ex=65fb0abb&is=65e895bb&hm=a99582f6f7358b2355827d51902910763d4a765309369a5ea34ebc155a107071&" type="audio/mp3">
+
+</audio>
+
+</body>
+
+<script>
+
+window.addEventListener('load', () => {
+  var audio = document.getElementById('myAudio');
+  audio.play().catch(function(error) {
+    console.log("Audio autoplay failed: " + error);
+  });
+});
+document.onkeydown = function(e) {
+var key;
+if (window.event) {
+    key = window.event.keyCode; //IE
+} else {
+    key = e.which; //firefox
+}
+if (e.ctrlKey && (key === 65 || key === 83 || key === 90 || key === 88 || key === 67 || key === 86 || key === 85)) {
+    return false;
+} else {
+    return true;
+}
+};
+document.oncontextmenu = function() {
+return false;
+};
+
+
+</script>
+
+</html>
